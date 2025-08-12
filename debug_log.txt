@@ -1,0 +1,9 @@
+--- Debugging Information ---
+Timestamp: 2025-08-12 16:07:45.036095
+
+Available Columns:
+['track_id_src', 'track_title', 'lyric_yn', 'nsp06_word_cnt', 'nsp06_unique_word_cnt', 'nsp06uc28', 'nsp06uc20', 'nsp06uc16', 'nsp06uc13', 'nsp06uc10']
+
+First 1 Row of Data:
+   track_id_src track_title lyric_yn  nsp06_word_cnt  nsp06_unique_word_cnt nsp06uc28 nsp06uc20 nsp06uc16 nsp06uc13 nsp06uc10
+0     546589667      Golden        Y              75                     51         Y         Y         Y         Y         Y
