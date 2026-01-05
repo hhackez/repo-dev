@@ -1,0 +1,700 @@
+✅ multiprocessing 시작 방식을 'spawn'으로 설정했습니다.
+--- 일일 소스 파일 생성을 시작합니다. ---
+--- 일일 소스 파일 생성 완료. ---
+
+start dtime: 2025-09-04 09:03:22
+처리할 트랙 수: 25488
+
+결과 파일 'logs/result_data_csv_20250904_090310.csv'에 헤더를 작성했습니다.
+
+--- 오디오 로더 워커 프로세스 시작 ---
+--- GPU 워커 프로세스 시작 ---
+--- 트랙 ID를 큐에 추가 시작 ---
+총 25488개의 트랙 ID를 큐에 추가했습니다.
+
+--- 모든 트랙 ID 전송 완료. 오디오 로더 종료 대기 ---
+Traceback (most recent call last):
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/main.py", line 136, in <module>
+    manager.run()
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/main.py", line 100, in run
+    p.join()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 149, in join
+Process Process-5:
+Process Process-3:
+Process Process-7:
+Process Process-6:
+    res = self._popen.wait(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py", line 43, in wait
+Process Process-1:
+Process Process-2:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 26, in audio_loader_worker
+    audio_data_queue.put((track_id, speech_audio))
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/queues.py", line 89, in put
+    if not self._sem.acquire(block, timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 26, in audio_loader_worker
+    audio_data_queue.put((track_id, speech_audio))
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/queues.py", line 89, in put
+    if not self._sem.acquire(block, timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+오디오 로더 워커 976090 시작.
+오디오 로더 976090: track_id 545446846 로드 시작.
+오디오 로더 976090: track_id 545446846 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 545446853 로드 시작.
+오디오 로더 976090: track_id 545446853 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 545446860 로드 시작.
+오디오 로더 976090: track_id 545446860 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 525993 로드 시작.
+오디오 로더 976090: track_id 525993 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 543559647 로드 시작.
+오디오 로더 976090: track_id 543559647 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 1115501 로드 시작.
+오디오 로더 976090: track_id 1115501 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 545446908 로드 시작.
+오디오 로더 976090: track_id 545446908 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 545446905 로드 시작.
+오디오 로더 976090: track_id 545446905 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 545446898 로드 시작.
+오디오 로더 976090: track_id 545446898 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 435401110 로드 시작.
+오디오 로더 976090: track_id 435401110 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 3383675 로드 시작.
+오디오 로더 976090: track_id 3383675 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 1210840 로드 시작.
+오디오 로더 976090: track_id 1210840 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 422942254 로드 시작.
+오디오 로더 976090: track_id 422942254 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 527947 로드 시작.
+오디오 로더 976090: track_id 527947 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 434121372 로드 시작.
+오디오 로더 976090: track_id 434121372 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 2104404 로드 시작.
+오디오 로더 976090: track_id 2104404 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 445379725 로드 시작.
+오디오 로더 976090: track_id 445379725 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 550580650 로드 시작.
+오디오 로더 976090: track_id 550580650 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 30156405 로드 시작.
+오디오 로더 976090: track_id 30156405 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 535258558 로드 시작.
+오디오 로더 976090: track_id 535258558 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 542067430 로드 시작.
+오디오 로더 976090: track_id 542067430 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 534006823 로드 시작.
+오디오 로더 976090: track_id 534006823 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 536687781 로드 시작.
+오디오 로더 976090: track_id 536687781 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 542196525 로드 시작.
+오디오 로더 976090: track_id 542196525 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 535258559 로드 시작.
+오디오 로더 976090: track_id 535258559 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 534542438 로드 시작.
+오디오 로더 976090: track_id 534542438 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 542068722 로드 시작.
+오디오 로더 976090: track_id 542068722 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 537815849 로드 시작.
+오디오 로더 976090: track_id 537815849 로드 완료, 큐에 추가.
+오디오 로더 976090: track_id 533388871 로드 시작.
+Traceback (most recent call last):
+오디오 로더 워커 976088 시작.
+오디오 로더 976088: track_id 434120767 로드 시작.
+오디오 로더 976088: track_id 434120767 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 525975 로드 시작.
+오디오 로더 976088: track_id 525975 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 552254275 로드 시작.
+오디오 로더 976088: track_id 552254275 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 5498112 로드 시작.
+오디오 로더 976088: track_id 5498112 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 453211271 로드 시작.
+오디오 로더 976088: track_id 453211271 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 545446913 로드 시작.
+오디오 로더 976088: track_id 545446913 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 545446879 로드 시작.
+오디오 로더 976088: track_id 545446879 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 30142215 로드 시작.
+오디오 로더 976088: track_id 30142215 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 543559672 로드 시작.
+오디오 로더 976088: track_id 543559672 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 485833019 로드 시작.
+오디오 로더 976088: track_id 485833019 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 435580146 로드 시작.
+오디오 로더 976088: track_id 435580146 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 61102938 로드 시작.
+오디오 로더 976088: track_id 61102938 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 552984601 로드 시작.
+오디오 로더 976088: track_id 552984601 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 30392166 로드 시작.
+오디오 로더 976088: track_id 30392166 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 24362142 로드 시작.
+오디오 로더 976088: track_id 24362142 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 424562 로드 시작.
+오디오 로더 976088: track_id 424562 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 3982663 로드 시작.
+오디오 로더 976088: track_id 3982663 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 446204090 로드 시작.
+오디오 로더 976088: track_id 446204090 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 440888773 로드 시작.
+오디오 로더 976088: track_id 440888773 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 451324741 로드 시작.
+오디오 로더 976088: track_id 451324741 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 538458327 로드 시작.
+오디오 로더 976088: track_id 538458327 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 539811161 로드 시작.
+오디오 로더 976088: track_id 539811161 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 533626485 로드 시작.
+오디오 로더 976088: track_id 533626485 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 535503513 로드 시작.
+오디오 로더 976088: track_id 535503513 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 532945391 로드 시작.
+오디오 로더 976088: track_id 532945391 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 531605996 로드 시작.
+오디오 로더 976088: track_id 531605996 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 531603874 로드 시작.
+오디오 로더 976088: track_id 531603874 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 533208564 로드 시작.
+오디오 로더 976088: track_id 533208564 로드 완료, 큐에 추가.
+오디오 로더 976088: track_id 531756039 로드 시작.
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 62, in whisper_gpu_worker
+    transcriptions = voice_detector.voice_detect(speech_audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/detectors/whisper_voice_detector.py", line 27, in voice_detect
+    transcriptions = self.model.transcribe(audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 279, in transcribe
+    result: DecodingResult = decode_with_fallback(mel_segment)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 195, in decode_with_fallback
+    decode_result = model.decode(segment, options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 824, in decode
+    result = DecodingTask(model, options).run(mel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 737, in run
+    tokens, sum_logprobs, no_speech_probs = self._main_loop(audio_features, tokens)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 700, in _main_loop
+    logit_filter.apply(logits, tokens)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 484, in apply
+    logits[k, self.tokenizer.timestamp_begin : timestamp_last] = -np.inf
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 62, in whisper_gpu_worker
+    transcriptions = voice_detector.voice_detect(speech_audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/detectors/whisper_voice_detector.py", line 27, in voice_detect
+    transcriptions = self.model.transcribe(audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 279, in transcribe
+    result: DecodingResult = decode_with_fallback(mel_segment)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 195, in decode_with_fallback
+    decode_result = model.decode(segment, options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 824, in decode
+    result = DecodingTask(model, options).run(mel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 737, in run
+    tokens, sum_logprobs, no_speech_probs = self._main_loop(audio_features, tokens)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 687, in _main_loop
+    logits = self.inference.logits(tokens, audio_features)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 163, in logits
+    return self.model.decoder(tokens, audio_features, kv_cache=self.kv_cache)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 242, in forward
+    x = block(x, xa, mask=self.mask, kv_cache=kv_cache)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 170, in forward
+    x = x + self.mlp(self.mlp_ln(x))
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/container.py", line 240, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 48, in forward
+    self.weight.to(x.dtype),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Process Process-4:
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 26, in audio_loader_worker
+    audio_data_queue.put((track_id, speech_audio))
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/queues.py", line 89, in put
+    if not self._sem.acquire(block, timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+오디오 로더 워커 976089 시작.
+오디오 로더 976089: track_id 80046060 로드 시작.
+오디오 로더 976089: track_id 80046060 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 1117587 로드 시작.
+오디오 로더 976089: track_id 1117587 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 80046062 로드 시작.
+오디오 로더 976089: track_id 80046062 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 2804843 로드 시작.
+오디오 로더 976089: track_id 2804843 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 545446863 로드 시작.
+오디오 로더 976089: track_id 545446863 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 545446892 로드 시작.
+오디오 로더 976089: track_id 545446892 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 525984 로드 시작.
+오디오 로더 976089: track_id 525984 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 545446901 로드 시작.
+오디오 로더 976089: track_id 545446901 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 434121284 로드 시작.
+오디오 로더 976089: track_id 434121284 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 5580485 로드 시작.
+오디오 로더 976089: track_id 5580485 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 80097256 로드 시작.
+오디오 로더 976089: track_id 80097256 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 5580482 로드 시작.
+오디오 로더 976089: track_id 5580482 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 1894618 로드 시작.
+오디오 로더 976089: track_id 1894618 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 471396258 로드 시작.
+오디오 로더 976089: track_id 471396258 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 4795409 로드 시작.
+오디오 로더 976089: track_id 4795409 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 434121316 로드 시작.
+오디오 로더 976089: track_id 434121316 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 422933991 로드 시작.
+오디오 로더 976089: track_id 422933991 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 1117464 로드 시작.
+오디오 로더 976089: track_id 1117464 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 455013189 로드 시작.
+오디오 로더 976089: track_id 455013189 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 434121282 로드 시작.
+오디오 로더 976089: track_id 434121282 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 528575145 로드 시작.
+오디오 로더 976089: track_id 528575145 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 533754263 로드 시작.
+오디오 로더 976089: track_id 533754263 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 539811165 로드 시작.
+오디오 로더 976089: track_id 539811165 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 528024560 로드 시작.
+오디오 로더 976089: track_id 528024560 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 528009504 로드 시작.
+오디오 로더 976089: track_id 528009504 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 535919715 로드 시작.
+오디오 로더 976089: track_id 535919715 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 541518422 로드 시작.
+오디오 로더 976089: track_id 541518422 로드 완료, 큐에 추가.
+오디오 로더 976089: track_id 535019295 로드 시작.
+GPU 0 워커 시작. 장치: cuda:0
+Whisper 모델을 cuda:0에 로드합니다.
+[GPU 0] track_id 434120767 Whisper 처리 시작...
+[GPU 0] track_id 434120767 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446846 Whisper 처리 시작...
+[GPU 0] track_id 545446846 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 1117587 Whisper 처리 시작...
+[GPU 0] track_id 1117587 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 5005963 Whisper 처리 시작...
+[GPU 0] track_id 5005963 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446876 Whisper 처리 시작...
+[GPU 0] track_id 545446876 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446871 Whisper 처리 시작...
+[GPU 0] track_id 545446871 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446879 Whisper 처리 시작...
+[GPU 0] track_id 545446879 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446892 Whisper 처리 시작...
+[GPU 0] track_id 545446892 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 545446883 Whisper 처리 시작...
+[GPU 0] track_id 545446883 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 30142215 Whisper 처리 시작...
+[GPU 0] track_id 30142215 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 2622494 Whisper 처리 시작...
+[GPU 0] track_id 2622494 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 5580485 Whisper 처리 시작...
+[GPU 0] track_id 5580485 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 1210840 Whisper 처리 시작...
+[GPU 0] track_id 1210840 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 496040732 Whisper 처리 시작...
+[GPU 0] track_id 496040732 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 552984601 Whisper 처리 시작...
+[GPU 0] track_id 552984601 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 5580482 Whisper 처리 시작...
+[GPU 0] track_id 5580482 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 527947 Whisper 처리 시작...
+[GPU 0] track_id 527947 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 1668088 Whisper 처리 시작...
+[GPU 0] track_id 1668088 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 24362142 Whisper 처리 시작...
+[GPU 0] track_id 24362142 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 471396258 Whisper 처리 시작...
+[GPU 0] track_id 471396258 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 3982663 Whisper 처리 시작...
+[GPU 0] track_id 3982663 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 445379725 Whisper 처리 시작...
+[GPU 0] track_id 445379725 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 440888773 Whisper 처리 시작...
+[GPU 0] track_id 440888773 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 30156405 Whisper 처리 시작...
+[GPU 0] track_id 30156405 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 434121282 Whisper 처리 시작...
+[GPU 0] track_id 434121282 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 542067430 Whisper 처리 시작...
+[GPU 0] track_id 542067430 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 528575145 Whisper 처리 시작...
+[GPU 0] track_id 528575145 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 523886572 Whisper 처리 시작...
+[GPU 0] track_id 523886572 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 534006823 Whisper 처리 시작...
+[GPU 0] track_id 534006823 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 533754263 Whisper 처리 시작...
+[GPU 0] track_id 533754263 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 539811165 Whisper 처리 시작...
+[GPU 0] track_id 539811165 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 533754255 Whisper 처리 시작...
+[GPU 0] track_id 533754255 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 528024560 Whisper 처리 시작...
+[GPU 0] track_id 528024560 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 535258559 Whisper 처리 시작...
+[GPU 0] track_id 535258559 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 3981413 Whisper 처리 시작...
+[GPU 0] track_id 3981413 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 528009504 Whisper 처리 시작...
+[GPU 0] track_id 528009504 처리 완료. 결과 큐에 추가.
+[GPU 0] track_id 535919715 Whisper 처리 시작...
+Traceback (most recent call last):
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 26, in audio_loader_worker
+    audio_data_queue.put((track_id, speech_audio))
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/queues.py", line 89, in put
+    if not self._sem.acquire(block, timeout):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Traceback (most recent call last):
+KeyboardInterrupt
+오디오 로더 워커 976091 시작.
+오디오 로더 976091: track_id 544700515 로드 시작.
+오디오 로더 976091: track_id 544700515 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 5005963 로드 시작.
+오디오 로더 976091: track_id 5005963 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 545446876 로드 시작.
+오디오 로더 976091: track_id 545446876 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 545446871 로드 시작.
+오디오 로더 976091: track_id 545446871 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 545446910 로드 시작.
+오디오 로더 976091: track_id 545446910 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 545446883 로드 시작.
+오디오 로더 976091: track_id 545446883 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 80046077 로드 시작.
+오디오 로더 976091: track_id 80046077 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 434121286 로드 시작.
+오디오 로더 976091: track_id 434121286 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 2622494 로드 시작.
+오디오 로더 976091: track_id 2622494 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 5498109 로드 시작.
+오디오 로더 976091: track_id 5498109 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 496040732 로드 시작.
+오디오 로더 976091: track_id 496040732 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 1668084 로드 시작.
+오디오 로더 976091: track_id 1668084 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 1668088 로드 시작.
+오디오 로더 976091: track_id 1668088 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 80313742 로드 시작.
+오디오 로더 976091: track_id 80313742 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 31127359 로드 시작.
+오디오 로더 976091: track_id 31127359 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 461132656 로드 시작.
+오디오 로더 976091: track_id 461132656 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 446440943 로드 시작.
+오디오 로더 976091: track_id 446440943 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 435725747 로드 시작.
+오디오 로더 976091: track_id 435725747 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 3455838 로드 시작.
+오디오 로더 976091: track_id 3455838 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 527399421 로드 시작.
+오디오 로더 976091: track_id 527399421 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 523886572 로드 시작.
+오디오 로더 976091: track_id 523886572 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 535503505 로드 시작.
+오디오 로더 976091: track_id 535503505 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 533754255 로드 시작.
+오디오 로더 976091: track_id 533754255 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 528024561 로드 시작.
+오디오 로더 976091: track_id 528024561 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 3981413 로드 시작.
+오디오 로더 976091: track_id 3981413 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 528009508 로드 시작.
+오디오 로더 976091: track_id 528009508 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 535784604 로드 시작.
+오디오 로더 976091: track_id 535784604 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 535153540 로드 시작.
+오디오 로더 976091: track_id 535153540 로드 완료, 큐에 추가.
+오디오 로더 976091: track_id 534541100 로드 시작.
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/workers.py", line 62, in whisper_gpu_worker
+    transcriptions = voice_detector.voice_detect(speech_audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/detectors/whisper_voice_detector.py", line 27, in voice_detect
+    transcriptions = self.model.transcribe(audio)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 279, in transcribe
+    result: DecodingResult = decode_with_fallback(mel_segment)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/transcribe.py", line 195, in decode_with_fallback
+    decode_result = model.decode(segment, options)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 824, in decode
+    result = DecodingTask(model, options).run(mel)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 737, in run
+    tokens, sum_logprobs, no_speech_probs = self._main_loop(audio_features, tokens)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 687, in _main_loop
+    logits = self.inference.logits(tokens, audio_features)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/decoding.py", line 163, in logits
+    return self.model.decoder(tokens, audio_features, kv_cache=self.kv_cache)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 242, in forward
+    x = block(x, xa, mask=self.mask, kv_cache=kv_cache)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 167, in forward
+    x = x + self.attn(self.attn_ln(x), mask=mask, kv_cache=kv_cache)[0]
+                      ^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/whisper/model.py", line 41, in forward
+    return super().forward(x.float()).type(x.dtype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/modules/normalization.py", line 217, in forward
+    return F.layer_norm(
+           ^^^^^^^^^^^^^
+  File "/home/dream/users/shen/Dev/music-flo/reco-ml-models/voice_detector/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 2910, in layer_norm
+    return torch.layer_norm(
+           ^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+GPU 1 워커 시작. 장치: cuda:1
+Whisper 모델을 cuda:1에 로드합니다.
+[GPU 1] track_id 544700515 Whisper 처리 시작...
+[GPU 1] track_id 544700515 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 525975 Whisper 처리 시작...
+[GPU 1] track_id 525975 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 552254275 Whisper 처리 시작...
+[GPU 1] track_id 552254275 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 525993 Whisper 처리 시작...
+[GPU 1] track_id 525993 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 2804843 Whisper 처리 시작...
+[GPU 1] track_id 2804843 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 453211271 Whisper 처리 시작...
+[GPU 1] track_id 453211271 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 543559647 Whisper 처리 시작...
+[GPU 1] track_id 543559647 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 1115501 Whisper 처리 시작...
+[GPU 1] track_id 1115501 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 545446908 Whisper 처리 시작...
+[GPU 1] track_id 545446908 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 545446905 Whisper 처리 시작...
+[GPU 1] track_id 545446905 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 80046077 Whisper 처리 시작...
+[GPU 1] track_id 80046077 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 543559672 Whisper 처리 시작...
+[GPU 1] track_id 543559672 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 545446901 Whisper 처리 시작...
+[GPU 1] track_id 545446901 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 434121286 Whisper 처리 시작...
+[GPU 1] track_id 434121286 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 485833019 Whisper 처리 시작...
+[GPU 1] track_id 485833019 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 435401110 Whisper 처리 시작...
+[GPU 1] track_id 435401110 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 435580146 Whisper 처리 시작...
+[GPU 1] track_id 435580146 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 5498109 Whisper 처리 시작...
+[GPU 1] track_id 5498109 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 1668084 Whisper 처리 시작...
+[GPU 1] track_id 1668084 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 1894618 Whisper 처리 시작...
+[GPU 1] track_id 1894618 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 80313742 Whisper 처리 시작...
+[GPU 1] track_id 80313742 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 4795409 Whisper 처리 시작...
+[GPU 1] track_id 4795409 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 2104404 Whisper 처리 시작...
+[GPU 1] track_id 2104404 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 434121316 Whisper 처리 시작...
+[GPU 1] track_id 434121316 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 461132656 Whisper 처리 시작...
+[GPU 1] track_id 461132656 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 446204090 Whisper 처리 시작...
+[GPU 1] track_id 446204090 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 422933991 Whisper 처리 시작...
+[GPU 1] track_id 422933991 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 550580650 Whisper 처리 시작...
+[GPU 1] track_id 550580650 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 1117464 Whisper 처리 시작...
+[GPU 1] track_id 1117464 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 451324741 Whisper 처리 시작...
+[GPU 1] track_id 451324741 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 535258558 Whisper 처리 시작...
+[GPU 1] track_id 535258558 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 538458327 Whisper 처리 시작...
+[GPU 1] track_id 538458327 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 533626485 Whisper 처리 시작...
+[GPU 1] track_id 533626485 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 536687781 Whisper 처리 시작...
+[GPU 1] track_id 536687781 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 535503513 Whisper 처리 시작...
+[GPU 1] track_id 535503513 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 532945391 Whisper 처리 시작...
+[GPU 1] track_id 532945391 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 528024561 Whisper 처리 시작...
+[GPU 1] track_id 528024561 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 531605996 Whisper 처리 시작...
+[GPU 1] track_id 531605996 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 528009508 Whisper 처리 시작...
+[GPU 1] track_id 528009508 처리 완료. 결과 큐에 추가.
+[GPU 1] track_id 531603874 Whisper 처리 시작...
+GPU 2 워커 시작. 장치: cuda:2
+Whisper 모델을 cuda:2에 로드합니다.
+[GPU 2] track_id 80046060 Whisper 처리 시작...
+[GPU 2] track_id 80046060 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446853 Whisper 처리 시작...
+[GPU 2] track_id 545446853 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446860 Whisper 처리 시작...
+[GPU 2] track_id 545446860 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 80046062 Whisper 처리 시작...
+[GPU 2] track_id 80046062 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 5498112 Whisper 처리 시작...
+[GPU 2] track_id 5498112 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446913 Whisper 처리 시작...
+[GPU 2] track_id 545446913 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446863 Whisper 처리 시작...
+[GPU 2] track_id 545446863 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446910 Whisper 처리 시작...
+[GPU 2] track_id 545446910 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 525984 Whisper 처리 시작...
+[GPU 2] track_id 525984 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 545446898 Whisper 처리 시작...
+[GPU 2] track_id 545446898 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 434121284 Whisper 처리 시작...
+[GPU 2] track_id 434121284 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 3383675 Whisper 처리 시작...
+[GPU 2] track_id 3383675 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 61102938 Whisper 처리 시작...
+[GPU 2] track_id 61102938 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 80097256 Whisper 처리 시작...
+[GPU 2] track_id 80097256 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 422942254 Whisper 처리 시작...
+[GPU 2] track_id 422942254 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 30392166 Whisper 처리 시작...
+[GPU 2] track_id 30392166 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 434121372 Whisper 처리 시작...
+[GPU 2] track_id 434121372 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 424562 Whisper 처리 시작...
+[GPU 2] track_id 424562 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 31127359 Whisper 처리 시작...
+[GPU 2] track_id 31127359 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 446440943 Whisper 처리 시작...
+[GPU 2] track_id 446440943 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 435725747 Whisper 처리 시작...
+[GPU 2] track_id 435725747 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 455013189 Whisper 처리 시작...
+[GPU 2] track_id 455013189 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 3455838 Whisper 처리 시작...
+[GPU 2] track_id 3455838 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 527399421 Whisper 처리 시작...
+[GPU 2] track_id 527399421 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 539811161 Whisper 처리 시작...
+[GPU 2] track_id 539811161 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 535503505 Whisper 처리 시작...
+[GPU 2] track_id 535503505 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 542196525 Whisper 처리 시작...
+[GPU 2] track_id 542196525 처리 완료. 결과 큐에 추가.
+[GPU 2] track_id 534542438 Whisper 처리 시작...
+    return self.poll(os.WNOHANG if timeout == 0.0 else 0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/dream/.local/share/uv/python/cpython-3.12.10-linux-x86_64-gnu/lib/python3.12/multiprocessing/popen_fork.py", line 27, in poll
+    pid, sts = os.waitpid(self.pid, flag)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

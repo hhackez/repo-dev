@@ -1,0 +1,10 @@
+[project]
+name = "voice-detector"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pyspark>=4.0.0",
+    "speechrecognition>=3.14.3",
+]

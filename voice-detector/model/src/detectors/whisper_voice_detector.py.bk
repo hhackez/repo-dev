@@ -1,0 +1,58 @@
+from audio_loader import AudioLoader
+from detectors.base import VoiceDetector
+import whisper
+import stable_whisper
+from collections import Counter
+import json
+import re
+import csv
+from datetime import datetime, timedelta, timezone
+
+class WhisperVoiceDetector(VoiceDetector):
+    def __init__(self):
+        # some implementation
+        self.model = whisper.load_model("base")
+
+    def voice_detect(self, audio, sampling_rate=16000) -> bool:
+        
+        # kst = timezone(timedelta(hours=9))
+        # start_dtime = datetime.now(kst)
+        # print("start dtime:", start_dtime.strftime("%Y-%m-%d %H:%M:%S"))
+
+        transcriptions = self.model.transcribe(audio)
+        
+        # 조건에 맞는 텍스트만 추출  (no_speech_prob 높을 수록 해당 구간 음성이 없다고 판단한 것)
+        new_text_segments = [
+            segment['text']
+            for segment in transcriptions['segments']
+            if segment.get('no_speech_prob',0) < 0.6
+        ]
+        nsp06_seg_cnt = len(new_text_segments)
+
+        # 하나의 문자열로 합치기
+        new_text = " ".join(new_text_segments)
+
+        # 소문자로 변환 + 특수문자 제거 + 토큰화
+        # 다국어 표현 누락 없도록 표현식 수정
+        tokens = re.findall(r'\S+', new_text.lower())
+
+        # 전체 단어 수
+        nsp06_word_cnt = len(tokens)
+        # 단어별 빈도수
+        nsp06_word_freq = Counter(tokens)
+        
+        # Unique_word_cnt
+        nsp06_unique_word_cnt = len(nsp06_word_freq)
+        
+        return nsp06_unique_word_cnt >= 28, transcriptions
+
+if __name__ == "__main__":
+    audio_loader = AudioLoader()
+    speech_audio = audio_loader.load_audio(track_id=523996880)
+
+    voice_detector = WhisperVoiceDetector()
+    result, transcriptions = voice_detector.voice_detect(speech_audio)
+    print(f"speech_audio에 음성이 있습니까? {result}")
+    print(transcriptions[:100])
+
+    

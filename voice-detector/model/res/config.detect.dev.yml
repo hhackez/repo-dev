@@ -1,0 +1,10 @@
+footprint: s3://flo-reco-dev/footprint/voice_detector/
+
+input:
+  num_files: 1
+  file_name : daily_vd_input.csv
+
+output:
+  num_files : 1
+  file_name : daily_vd_output.csv
+

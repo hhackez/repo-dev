@@ -1,0 +1,14 @@
+pandas
+requests
+tqdm
+openai-whisper
+# a100 cuda 기준
+torch
+torchvision
+torchaudio
+demucs
+pendulum
+s3fs
+pydub
+numpy
+
