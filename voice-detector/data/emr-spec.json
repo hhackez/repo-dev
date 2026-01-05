@@ -1,0 +1,57 @@
+{
+  "auto_termination": {
+    "IdleTimeout": 600
+  },
+  "tags": [
+    {
+      "key": "Name",
+      "value": "voice-detector"
+    }
+  ],
+  "instance_fleets": [
+    {
+      "Name": "Master_Fleet",
+      "InstanceFleetType": "MASTER",
+      "TargetOnDemandCapacity": 1,
+      "InstanceTypeConfigs": [
+        {
+          "InstanceType": "m7g.xlarge",
+          "WeightedCapacity": 1,
+          "EbsConfiguration": {
+            "EbsBlockDeviceConfigs": [
+              {
+                "VolumeSpecification": {
+                  "VolumeType": "gp3",
+                  "SizeInGB": 32
+                },
+                "VolumesPerInstance": 2
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Core_Fleet",
+      "InstanceFleetType": "CORE",
+      "TargetOnDemandCapacity": 1,
+      "InstanceTypeConfigs": [
+        {
+          "InstanceType": "r7g.4xlarge",
+          "WeightedCapacity": 1,
+          "EbsConfiguration": {
+            "EbsBlockDeviceConfigs": [
+              {
+                "VolumeSpecification": {
+                  "VolumeType": "gp3",
+                  "SizeInGB": 128
+                },
+                "VolumesPerInstance": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

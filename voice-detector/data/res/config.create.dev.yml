@@ -1,0 +1,13 @@
+footprint: s3://flo-reco-dev/footprint/voice_detector/
+
+input:
+  track_all: flo_reco.track_all
+  mcp_track : flo_mcp.tnmm_track
+  vd_track : flo_reco_dev.tb_vd_track_meta
+
+output:
+  num_files: 1
+  file_name : daily_vd_input.csv
+  
+filter:
+  exclude_style_ids : [70203, 70204, 80201, 80401, 90102, 90106, 100103]

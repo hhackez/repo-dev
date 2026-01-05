@@ -1,0 +1,21 @@
+footprint: s3://flo-reco/footprint/voice_detector/
+
+input:
+  source_table : flo_reco.tb_vd_track_tmp
+
+output:
+  temp_table : flo_reco.tb_vd_track_meta_tmp
+  target_table : flo_reco.tb_vd_track_meta
+  filter_table : flo_reco.tnmm_track
+
+final:
+  final_table : flo_reco.tb_vd_track_nsp06_stat
+  mcp_track_table : flo_reco.tnmm_track
+  mcp_artist_table : flo_mcp.tnmm_track_artist
+  mcp_album_table : flo_mcp.tnmm_track_album
+  poc_genre_map_table : flo_poc.tb_map_svc_genre_track
+  poc_genre_table : flo_poc.tb_svc_genre
+
+filter:
+  filter_table : flo_reco.track_all
+  exclude_style_ids : [70203, 70204, 80201, 80401, 90102, 90106, 100103]
